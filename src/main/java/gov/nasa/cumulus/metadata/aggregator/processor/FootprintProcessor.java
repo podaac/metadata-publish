@@ -323,7 +323,6 @@ public class FootprintProcessor extends ProcessorBase{
         }
 
         // Check if coordinates are in clockwise order and reverse if needed
-        AdapterLogger.LogInfo("Coordinates Length: " + coordinates.length);
         if(coordinates.length > 3){
             if (!CGAlgorithms.isCCW(coordinates)) {
                 coordinates = reverseCoordinates(coordinates);
